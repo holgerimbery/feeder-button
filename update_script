@@ -2,7 +2,7 @@
 
 ADDON_NAME=feeder-button
 CONFIG_DIR=/usr/local/etc/config
-WWW_DIR=/usr/local/etc/config/addons/www/hm-tools
+WWW_DIR=/usr/local/etc/config/addons/www/feeder-button
 ADDON_DIR=/usr/local/addons/${ADDON_NAME}
 PROFILE_DIR=/usr/local/etc/profile.d
 RCD_DIR=${CONFIG_DIR}/rc.d
