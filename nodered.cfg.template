@@ -1,0 +1,9 @@
+{
+  CONFIG_URL http://##awesome_URL##:1880
+  CONFIG_DESCRIPTION {
+    de {<li>Node-Red</li>}
+    en {<li>Node-Red</li>}
+  }
+  ID nodered
+  CONFIG_NAME Node-Red
+}

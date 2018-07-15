@@ -1,0 +1,9 @@
+{
+  CONFIG_URL http://##awesome_URL##:9000
+  CONFIG_DESCRIPTION {
+    de {<li>docker - admin</li>}
+    en {<li>docker - admin</li>}
+  }
+  ID feeder
+  CONFIG_NAME feeder - administration
+}

@@ -1,0 +1,10 @@
+{
+  CONFIG_URL http://##awesome_URL##:8888
+  CONFIG_DESCRIPTION {
+    de {<li>access chronograf on your feeder</li>}
+    en {<li>access chronograf on your feeder</li>}
+  }
+  ID chronograf
+  CONFIG_NAME chronograf
+}
+

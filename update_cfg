@@ -1,0 +1,13 @@
+#!/bin/sh
+ADDONDIR=/usr/local/addons/feeder-button
+URL=$(cat /usr/local/addons/feeder-button/URL)
+echo $URL
+sed 's/##awesome_URL##/'$URL'/g' <$ADDONDIR/feeder.cfg.template > $ADDONDIR/feeder.cfg
+sed 's/##awesome_URL##/'$URL'/g' <$ADDONDIR/chronograf.cfg.template > $ADDONDIR/chronograf.cfg
+sed 's/##awesome_URL##/'$URL'/g' <$ADDONDIR/nodered.cfg.template > $ADDONDIR/nodered.cfg
+sed 's/##awesome_URL##/'$URL'/g' <$ADDONDIR/nrdash.cfg.template > $ADDONDIR/nrdash.cfg
+./update_addon nodered nodered.cfg
+./update_addon nrdash nrdash.cfg
+./update_addon feeder feeder.cfg
+./update_addon chronograf chronograf.cfg
+

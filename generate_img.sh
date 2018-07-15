@@ -14,6 +14,10 @@ cp -a rc.d tmp/
 cp -a profile.d tmp/
 cp -a update_addon tmp/
 cp -a *.cfg tmp/
+cp -a *.cfg.template tmp/
+cp -a update_cfg tmp/
+cp -a URL tmp/
+
 
 # generate archive
 cd tmp

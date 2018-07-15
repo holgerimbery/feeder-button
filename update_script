@@ -49,8 +49,15 @@ if [ "$1" == "HM-RASPBERRYMATIC" ]; then
 
   #build system launcher
   chmod +x ${RCD_DIR}/${ADDON_NAME}
-
+  
+  cp -af update_addon ${ADDON_DIR}/
+  cp -af update_cfg ${ADDON_DIR}/
+  cp -af *.cfg ${ADDON_DIR}/
+  cp -af *.cfg.template ${ADDON_DIR}/
+  chmod 755 ${ADDON_DIR}/update_addon
+  chmod 755 ${ADDON_DIR}/update_cfg
 fi
+
 ./update_addon node-red
 ./update_addon node-red-dashboard
 
