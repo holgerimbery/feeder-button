@@ -11,4 +11,4 @@ Um RaspberryMatic zu entlasten können Elemete auf einen weiteren RaspberryPi mi
 * chronograf (als Oberfläche für influxdb, kapacitor & telegraph)
 * portainer als GUI für docker, templates für die Installation aller Komponenten sind in portainer integriert
 
-Dieses Add-on integriert Buttons unter der Homematic UI (Einstellungen/Systemsteuerung), um leichter auf die feeder installation zugreifen zu können.
+Dieses Add-on integriert Buttons unter der Homematic UI (Einstellungen/Systemsteuerung), um leichter auf die feeder Installation zugreifen zu können.
