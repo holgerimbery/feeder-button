@@ -1,6 +1,6 @@
-# feeder-button
+![feeder_logo](https://github.com/holgerimbery/environment/raw/master/feeder_logo_small.jpg)
 
-### feeder-button das RaspberryMatic Addon für Feeder
+### feeder-button - das RaspberryMatic Addon für Feeder
 
 Um RaspberryMatic zu entlasten können Elemete auf einen weiteren RaspberryPi mit Docker oder auf mehrer RaspberryPis im Docker Swarm Modus ausgelagert werden.
 
