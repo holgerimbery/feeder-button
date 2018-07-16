@@ -72,4 +72,4 @@ touch $CONF_DIR/hm_addons.cfg
 
 # synchronize filesystem before performing a reboot
 # afterwards
-sync
+#sync

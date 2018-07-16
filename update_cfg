@@ -1,13 +1,18 @@
 #!/bin/sh
 ADDONDIR=/usr/local/addons/feeder-button
-URL=$(cat /usr/local/addons/feeder-button/URL)
+while read var value
+do
+    export "$var"="$value"
+done < /usr/local/addons/feeder-button/host.conf
+
+URL=$HOST
 echo $URL
 sed 's/##awesome_URL##/'$URL'/g' <$ADDONDIR/feeder.cfg.template > $ADDONDIR/feeder.cfg
 sed 's/##awesome_URL##/'$URL'/g' <$ADDONDIR/chronograf.cfg.template > $ADDONDIR/chronograf.cfg
 sed 's/##awesome_URL##/'$URL'/g' <$ADDONDIR/nodered.cfg.template > $ADDONDIR/nodered.cfg
 sed 's/##awesome_URL##/'$URL'/g' <$ADDONDIR/nrdash.cfg.template > $ADDONDIR/nrdash.cfg
-./update_addon nodered nodered.cfg
-./update_addon nrdash nrdash.cfg
-./update_addon feeder feeder.cfg
-./update_addon chronograf chronograf.cfg
+/usr/local/addons/feeder-button/update_addon nodered /usr/local/addons/feeder-button/nodered.cfg
+/usr/local/addons/feeder-button/update_addon nrdash /usr/local/addons/feeder-button/nrdash.cfg
+/usr/local/addons/feeder-button/update_addon feeder /usr/local/addons/feeder-button/feeder.cfg
+/usr/local/addons/feeder-button/update_addon chronograf /usr/local/addons/feeder-button/chronograf.cfg
 

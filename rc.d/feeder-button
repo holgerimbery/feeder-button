@@ -18,8 +18,9 @@ info)
   echo "Info: <a href='https://github.com/holgerimbery/feeder'>https://github.com/holgerimbery/feeder</a>"
   echo "Version: $(cat ${ADDON_DIR}/VERSION)"
   echo "Name: feeder-button<br>"
+  echo "Update: /addons/update-check.cgi"
+  echo "Config-Url: /addons/feeder-button/index.cgi"
   echo "Operations: uninstall"
-  echo "Update: /addons/${ADDONNAME}/update-check.cgi"
   ;;
 uninstall)
   rm -rf $ADDON_DIR
@@ -30,3 +31,4 @@ uninstall)
 esac
 
 exit 0
+
