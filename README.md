@@ -1,5 +1,4 @@
 # feeder-button
-## WIP: still hardcoded links
 
 ### feeder-button das RaspberryMatic Addon für Feeder
 
