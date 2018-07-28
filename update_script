@@ -58,17 +58,13 @@ if [ "$1" == "HM-RASPBERRYMATIC" ]; then
   chmod 755 ${ADDON_DIR}/update_cfg
 fi
 
-./update_addon node-red
-./update_addon node-red-dashboard
-
 #
 #   Create Buttons in Homematic WebUI
 #
 touch $CONF_DIR/hm_addons.cfg
-./update_addon nodered nodered.cfg
-./update_addon nrdash nrdash.cfg
+
 ./update_addon feeder feeder.cfg
-./update_addon chronograf chronograf.cfg
+
 
 # synchronize filesystem before performing a reboot
 # afterwards

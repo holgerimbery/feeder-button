@@ -1,9 +1,0 @@
-{
-  CONFIG_URL http://##awesome_URL##:1880/ui
-  CONFIG_DESCRIPTION {
-    de {<li>Node-Red-dashboard</li>}
-    en {<li>Node-Red-dashboard</li>}
-  }
-  ID nrdash
-  CONFIG_NAME Dashboard
-}
