@@ -13,4 +13,4 @@ Hierbei werdenzusätzliche IoT Elemete auf mehrer RaspberryPis im Docker Swarm M
 
 Dieses Add-on integriert einen Button unter der Homematic UI (Einstellungen/Systemsteuerung), um leichter auf die feeder Installation zugreifen zu können.
 
-[feeder-cluster](https://github.com/holgerimbery/feeder-stack) schafft die Basis für diese Installation in Form eines Raspberry Pi Clusters das ohne SD-Cards auskommt. Der Master startet von SSD und stellt die Filesysteme aller Nodes via NFS zur Verfügung. Lediglich zur Installation wird eine SD-Card benötigt.
+[feeder-cluster](https://github.com/holgerimbery/feeder-cluster) schafft die Basis für diese Installation in Form eines Raspberry Pi Clusters das ohne SD-Cards auskommt. Der Master startet von SSD und stellt die Filesysteme aller Nodes via NFS zur Verfügung. Lediglich zur Installation wird eine SD-Card benötigt.
