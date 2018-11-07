@@ -1,5 +1,5 @@
 {
-  CONFIG_URL http://##awesome_URL##:9000
+  CONFIG_URL http://##awesome_URL##
   CONFIG_DESCRIPTION {
     de {<li>docker - admin</li>}
     en {<li>docker - admin</li>}
