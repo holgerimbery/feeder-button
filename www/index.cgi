@@ -2,9 +2,9 @@
 
 set FILENAME "/usr/local/addons/feeder-button/host.conf"
 
-set host 192.168.001.100
+set host 192.168.001.100:9000
 
-array set args { command INV host 192.168.001.100 }
+array set args { command INV host 192.168.001.100:9000 }
 
 proc parseQuery { } {
 	global args env
@@ -38,7 +38,7 @@ proc loadFile { fileName } {
 proc loadConfigFile { } {
 	global FILENAME host
 	
-	array set content {HOST 127.0.0.1}
+	array set content {HOST 127.0.0.1:9000}
 	catch { array set content [loadFile $FILENAME] }
 	
 	set host $content(HOST)
